@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>爆速マネークリッカー Pro</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <h1>💰 爆速マネークリッカー Pro 💰</h1>
+      <div class="money-display">$<span id="money">0</span></div>
+      <div class="cps-display">毎秒の獲得量: $<span id="cps">0</span> /秒</div>
+    </header>
+
+    <main class="action-area">
+      <button id="clickBtn" class="main-btn">
+        <span class="btn-text">タップしてお金を稼ぐ！</span>
+        <span class="btn-sub" id="clickPowerText">1タップ = +$1</span>
+      </button>
+    </main>
+
+    <section class="shop-area">
+      <h2>ショップ・強化アイテム</h2>
+      
+      <div class="shop-item">
+        <div class="item-info">
+          <div class="item-title">👆 タップ強化</div>
+          <div class="item-desc">クリック時の獲得量を＋1増やします</div>
+        </div>
+        <button id="buyClick" class="upg-btn">購入 ($10)</button>
+      </div>
+
+      <div class="shop-item">
+        <div class="item-info">
+          <div class="item-title">🤖 自動購入機</div>
+          <div class="item-desc">自動で毎秒＋5の収益を生み出します</div>
+        </div>
+        <button id="buyAuto" class="upg-btn">購入 ($50)</button>
+      </div>
+
+      <div class="shop-item">
+        <div class="item-info">
+          <div class="item-title">⚡ 全生産力 2倍ブースト</div>
+          <div class="item-desc">すべての収入速度が2倍になります</div>
+        </div>
+        <button id="buyBoost" class="upg-btn boost-btn">購入 ($500)</button>
+      </div>
+
+      <div class="shop-item prestige-item">
+        <div class="item-info">
+          <div class="item-title">🌟 転生（タイムリセット）</div>
+          <div class="item-desc">全リセットと引き換えに、永久収入ボーナスを獲得！</div>
+        </div>
+        <button id="prestige" class="upg-btn prestige-btn" disabled>転生 ($100,000)</button>
+      </div>
+    </section>
+
+    <footer class="system-area">
+      <button id="saveBtn" class="sys-btn">💾 セーブ</button>
+      <button id="resetBtn" class="sys-btn danger">🗑️ データ消去</button>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
